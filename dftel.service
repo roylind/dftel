@@ -1,0 +1,10 @@
+[Unit]
+Description = Disable Firefox Telemetry
+
+[Service]
+ExecStart=/usr/bin/dftel
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
